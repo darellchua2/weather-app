@@ -25,14 +25,23 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
+  - npm install -g now
 
 script:
   - ng build --prod --base-href https://kenken64.github.io/weather-app/
-
+  - ng build --prod --output-path ./dist/zeit-cloud --base-href https://weather-app.bunnyppl.now.sh
+  
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist/weather-app
+  on:
+    branch: master
+
+deploy:
+  provider: script
+  script: npm run deploy 
+  local_dir: dist/zeit-cloud
   on:
     branch: master

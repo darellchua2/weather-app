@@ -8,7 +8,8 @@
     "test": "ng test",
     "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e", 
+    "deploy": "now --no-clipboard --token=$NOW_TOKEN --public --prod"
   },
   "private": true,
   "dependencies": {
