@@ -50,6 +50,6 @@ export class WeatherService {
     this.countries.push({ countryName: city.country, city: city.city });
     this.countries.sort((a, b) => (a.countryName > b.countryName) ? 1 : -1);
     this.imgMapBasedCity.push({ city: city.city, imageUrl: 
-      `https://cors-anywhere.herokuapp.com/${city.imageurl}` });
+      `${city.imageurl}` });
   }
 }
