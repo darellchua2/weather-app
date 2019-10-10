@@ -1,3 +1,4 @@
+enabled: false
 language: node_js
 node_js:
   - node
@@ -11,11 +12,6 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
-
-notifications:
-  email:
-    - bunnyppl@gmail.com
-    - bunnyppl@hotmail.com
 
 script:
   - ng build --prod --base-href https://kenken64.github.io/weather-app/
