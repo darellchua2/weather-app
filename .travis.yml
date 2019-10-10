@@ -29,7 +29,7 @@ before_script:
 
 script:
   - ng build --prod --base-href https://kenken64.github.io/weather-app/
-  - ng build --prod --output-path ./dist/zeit-cloud --base-href https://weather-app.bunnyppl.now.sh
+  - ng build --prod --output-path ./dist/zeit-cloud --base-href https://weather-app.bunnyppl.now.sh/
   
 deploy:
   provider: pages
