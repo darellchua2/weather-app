@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy  } from '@angular/core';
 
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { MatSnackBar } from "@angular/material";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { WeatherService } from '../services/weather.service';
 import { Router } from "@angular/router";
 
